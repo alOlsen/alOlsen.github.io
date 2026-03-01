@@ -1,136 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alvaro Olsen</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --background: hsl(0, 0%, 5.1%);
-      --foreground: hsl(0, 0%, 88.6%);
-      --muted-foreground: hsl(240, 5%, 65%);
-      --primary: hsl(221, 83%, 53%);
-      --primary-hover: hsl(221, 83%, 48%);
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content="Alvaro Olsen — NYU PhD Candidate specializing in AI Engineering, Spatial Audio, and Cognitive Science. Available for research collaborations." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alvaro Olsen — AI Engineer & Researcher</title>
+    <meta name="author" content="Alvaro Olsen" />
+    <link rel="canonical" href="https://alolsen.net" />
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta property="og:title" content="Alvaro Olsen — AI Engineer & Researcher" />
+    <meta property="og:description" content="NYU PhD Candidate specializing in AI Engineering, Spatial Audio, and Cognitive Science." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alolsen.net" />
+    <meta property="og:image" content="https://alolsen.net/og-image.png" />
 
-    html {
-      scroll-behavior: smooth;
-    }
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Alvaro Olsen — AI Engineer & Researcher" />
+    <meta name="twitter:description" content="NYU PhD Candidate specializing in AI Engineering, Spatial Audio, and Cognitive Science." />
+    <script type="module" crossorigin src="/assets/index-SWW2mK7p.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DuhXG4x3.css">
+  </head>
 
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--background);
-      color: var(--foreground);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-
-    .gradient-glow {
-      position: absolute;
-      width: 24rem;
-      height: 24rem;
-      border-radius: 50%;
-      background: linear-gradient(135deg, hsla(221, 83%, 53%, 0.15), hsla(270, 50%, 40%, 0.15));
-      filter: blur(48px);
-      opacity: 0.4;
-      animation: float 6s ease-in-out infinite;
-    }
-
-    .gradient-glow-1 { top: 25%; left: 25%; }
-    .gradient-glow-2 { bottom: 25%; right: 25%; animation-delay: 3s; }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-
-    .container {
-      position: relative;
-      z-index: 10;
-      text-align: center;
-      max-width: 72rem;
-      padding: 6rem 1.5rem;
-    }
-
-    .subtitle {
-      font-size: 0.875rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: var(--muted-foreground);
-      margin-bottom: 1.5rem;
-      font-weight: 500;
-    }
-
-    h1 {
-      font-family: 'Space Grotesk', system-ui, sans-serif;
-      font-size: clamp(2.5rem, 8vw, 5rem);
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      margin-bottom: 1.5rem;
-      line-height: 1.1;
-    }
-
-    .gradient-text {
-      background: linear-gradient(90deg, hsl(221, 83%, 53%), hsl(270, 50%, 55%));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .tagline {
-      font-size: 1.25rem;
-      font-weight: 300;
-      max-width: 48rem;
-      margin: 0 auto 2rem;
-      line-height: 1.6;
-    }
-
-    .glass-card {
-      display: inline-block;
-      padding: 1rem 2rem;
-      background: hsla(0, 0%, 7%, 0.6);
-      backdrop-filter: blur(24px);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 0.75rem;
-      text-decoration: none;
-      color: var(--foreground);
-      font-weight: 500;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 0 20px hsla(221, 83%, 53%, 0.1);
-    }
-
-    .glass-card:hover {
-      border-color: rgba(255, 255, 255, 0.12);
-      background: hsla(0, 0%, 7%, 0.8);
-      color: var(--primary);
-      box-shadow: 0 0 30px hsla(221, 83%, 53%, 0.2);
-    }
-  </style>
-</head>
-<body>
-  <div class="gradient-glow gradient-glow-1"></div>
-  <div class="gradient-glow gradient-glow-2"></div>
-
-  <div class="container">
-    <p class="subtitle">NYU PhD Candidate · Graduating May 2026</p>
-    <h1>Alvaro <span class="gradient-text">Olsen</span></h1>
-    <p class="tagline">AI Engineer & Researcher · Games for Learning · Audio Emotional Design · GenAI</p>
-    <a href="https://alolsen.net" class="glass-card">Visit alolsen.net →</a>
-  </div>
-</body>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
